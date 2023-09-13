@@ -1,0 +1,51 @@
+/* 70 / 2 = 35px each side + 2px padding */
+.range {
+  display: flex;
+  align-items: center;
+  padding-left: 37px;
+  padding-right: 37px;
+  width: calc(100% - 37px - 37px);
+  height: 32px;
+  background: white;
+  border: 1px solid #e1e1e1;
+  border-radius: 16px;
+}
+
+.track {
+  position: relative;
+  width: 100%;
+}
+
+.thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  background: #007bff;
+  border-radius: 14px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: grab;
+  z-index: 2;
+}
+
+.filler {
+  position: absolute;
+  height: 28px;
+  left: -35px;
+  background-color: #d1e7ff;
+  top: calc(-28px + 14px);
+  z-index: 1;
+  border-radius: 15px;
+}
+
+.disclaimer {
+  position: absolute;
+  top: -6px;
+  left: calc(50% - 120px / 2);
+  font-size: 12px;
+  color: #878787;
+  z-index: 0;
+  user-select: none;
+}
