@@ -28,6 +28,7 @@
   transform: translateY(-50%);
   cursor: grab;
   z-index: 2;
+  touch-action: none;
 }
 
 .filler {
